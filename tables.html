@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table</title>
+        <link rel="icon" href="HTML_logo.jpg">
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 20px;
+            }   
+        </style>
+    </head>
+    <body>
+
+        <center>
+            <h1>HTML <span style="background-color:red; color:white; border:solid; border-radius:15px; font-size:larger">Table 1</span></h1>
+            <p>rowspan and colspan are used</p>
+            <table style="text-align:center" class="table" id="table">
+                <tr class="row1" style="background-color:#4a4e69; color:white">
+                    <th colspan="2">Name</th>
+                    <th>Age</th>
+                    <th>Dept</th>
+                    <th>Gender</th>
+                </tr>
+                
+                <tr class="row2" style="background-color:#8a8ea5; color:white">
+                    <td rowspan="2">Gautam s</td>
+                    <td>21</td>
+                    <td>MCA</td>
+                    <td>Male</td>
+                    <!-- Note: Adjusted columns to align properly with the 5 header columns -->
+                </tr>
+                
+                <tr class="row3" style="background-color:#4a4e69; color:white">
+                    <td>Sudharsan</td>
+                    <td>21</td>
+                    <td>MCA</td>
+                    <td>Male</td>
+                </tr>
+                
+                <tr class="row4" style="background-color:#8a8ea5; color:white">
+                    <td colspan="2">Gautam nm</td>
+                    <td>22</td>
+                    <td>MCA</td>
+                    <td>Male</td>
+                </tr>
+
+                <tr class="row5" style="background-color:#4a4e69; color:white">
+                    <td colspan="2">Chandru</td>
+                    <td>22</td>
+                    <td>MCA</td>
+                    <td>Male</td>
+                </tr>
+            </table>
+        </center>
+
+        <h1 style="text-align:center">Block Elements</h1>
+        <div style="background-color:#4a4e69; color:white">
+            Block Elements starts on newline and it occupies whole width of the line
+        </div>
+
+        <h1 style="text-align:center">Inline Element</h1>
+        <span style="background-color:#4a4e69; color:white">Inline element takes only the width required by its content.</span>
+
+        <h1 style="text-align:center">Using Division tag</h1>
+
+        <div style="background-color:#4a4e69; color:white" class="grouping" id="grouping">
+            <h3 style="background-color:red; width:70px">Gautam</h3>
+            <h3>MCA</h3>
+        </div>
+
+        <h1 style="text-align:center">iframes (Inline frames)</h1>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mJgBOIoGihA?si=igI-wVCUhj4eJ8pt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="display:block; margin:auto"></iframe><br><hr>
+
+        <h1 style="text-align:center">HTML JavaScript</h1>
+
+        <div style="display:flex;justify-content:center">
+            <p>Accessing next paragraph content using text-content</p><br>
+        </div>
+
+        <p id="content" style="text-align:center">Hello World</p><br>
+        <hr>
+        
+        <script>
+            alert("welcome to table page");
+            let a=document.getElementById("content");
+            a.textContent="Hello Javascript"
+        </script>
+
+        <p id="para"></p>
+        
+
+
+
+
+
+
+
+
+        <h3 style="text-align:center"><a href="Demo1.html" style="text-decoration:underline">Page1</a></h3>
+    </body>
+</html>
