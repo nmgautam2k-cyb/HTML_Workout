@@ -1,24 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <title>Geo</title>
-    </head>
+  <head>
+    <title>Geo</title>
+  </head>
 
-    <body>
-        <h1>GeoLocation</h1>
+  <body>
+    <h1>GeoLocation</h1>
 
-        <button onclick="getLocation()">Get Location</button>
-        <p id="loc"></p>
-    </body>
+    <button onclick="getLocation()">Get Location</button>
+    <p id="loc"></p>
+  </body>
 
-    <script>
-        var var1 = document.getElementById("loc");
-        function getLocation() {
-            navigator.geolocation.getCurrentPosition(showLoc);
-        }
+  <script>
+    var var1 = document.getElementById("loc");
+    function getLocation() {
+      navigator.geolocation.getCurrentPosition(showLoc);
+    }
 
-        function showLoc(pos) {
-            var1.innerHTML = pos.coords.latitude;
-        }
-    </script>
+    function showLoc(pos) {
+      var1.innerHTML = pos.coords.latitude;
+    }
+  </script>
 </html>
