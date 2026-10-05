@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head>
+    <title>forms</title>
+    <meta name="viewport;width=device-width initial-scale=1.0" />
+
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      style="
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(249, 249, 220);
+        padding: 30px;
+      "
+    >
+      <h3 style="margin-left: 30px">Form</h3>
+      <ul
+        style="
+          list-style-type: none;
+          display: flex;
+          gap: 20px;
+          margin-right: 100px;
+        "
+      >
+        <li><a href="Demo1.html" style="text-decoration: none">Demo1</a></li>
+        <li>
+          <a href="tables.html" style="text-decoration: none">Table Page</a>
+        </li>
+        <li><a href="#form" style="text-decoration: none">Form Page</a></li>
+        <li>
+          <a href="Canvas.html" style="text-decoration: none">Canvas Page</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div
+      style="
+        border: solid 1px;
+        border-radius: 10%;
+        width: 500px;
+        margin-top: 100px;
+        margin-left: 35%;
+        background-color: rgb(249, 249, 220);
+      "
+      id="form"
+    >
+      <h1 style="text-align: center"><u>Sample Form</u></h1>
+      <pre>
+        <form autocomplete=""on>
+           
+           <label  for="username">Name</label>   <input type="text" placeholder="Enter Name" style="width:250px;height:30px;border:solid 1px;border-radius:10px;background-color:rgb(220, 220, 220);color:rgb(0, 0, 0)" required><br>
+
+           <label for="age">Age</label>    <input type="number" placeholder="Enter Age" style="width:250px;height:30px;border:solid 1px;border-radius:10px;background-color:rgb(220, 220, 220);color:rgb(0, 0, 0)" required>
+
+           <label  for="gender">Gender</label>    <label for="gender">Male</label> <input type="radio" id="male" name="gender"> <label >Female</label> <input type="radio" id="female" name="gender"  required>
+
+           <label for="email">Email</label>  <input type="email" placeholder="Enter Email" style="width:250px;height:30px;border:solid 1px;border-radius:10px;background-color:rgb(220, 220, 220);color:rgb(0, 0, 0)" required>  
+
+           <label for="range">Experience</label> <input type="range" required min="50" max="100" id="range">
+
+           <label>Docuuments</label>  <input type="file" accept=".jpg,.png">
+
+           <textarea rows="5" cols="30" placeholder="About Yourself" style="display: flex; justify-content:center;margin-left:150px;background-color:rgb(220,220,220)"></textarea>
+
+           <button type="submit" style="margin-left:130px;margin-top:20px;padding:15px;border-radius:50px;border:solid 1px;background-color:rgb(220,220,220)">Submit</button> <br>           
+        </form>
+        </pre>
+    </div>
+
+    <a
+      href="tables.html"
+      style="
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+        margin-top: 30px;
+      "
+      >Table Page</a
+    >
+  </body>
+</html>

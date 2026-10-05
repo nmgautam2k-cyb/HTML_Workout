@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Drag and Drop</title>
+
+    <style>
+      div {
+        width: 400px;
+        height: 200px;
+        border: solid black 1px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <p id="drag" draggable="true" ondragstart="DragElement(event)">Content</p>
+      
+    </div>
+
+    <div id="drop" ondrop="DropElement(event)" ondragover="AllowOver(event)">
+
+    </div>
+
+    <script>
+      function DragElement(x) {
+        x.dataTransfer.setData("text", x.target.id);
+      }
+
+      function DropElement(x) {
+        x.preventDefault();
+
+        var a = x.dataTransfer.getData("text");
+
+        x.target.appendChild(document.getElementById(a));
+      }
+
+      function AllowOver(x) {
+        x.preventDefault();
+      }
+    </script>
+  </body>
+</html>

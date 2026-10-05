@@ -1,159 +1,222 @@
 <html>
-	<head>
-		<title>Demo</title>
-		<link rel="icon" href="HTML_logo.jpg">
-	</head>
+  <head>
+    <title>Demo</title>
+    <link rel="icon" href="HTML_logo.jpg" />
+    <style>
+      a {
+        padding: 20px;
+      }
+      #book {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+    </style>
+  </head>
 
-<body>
-    <div class="bookmark">
-        <h1 style="text-align:center">Bookmarks</h1>
-        <a href="#head">Heading</a>
-        <a href="#para">para</a>
-        <a href="#list">list</a>
-        <a href="#quotes">quotes</a>
-        <a href="#formatting">formatting</a>
-        <a href="#hyperlinks">hyperlinks</a>
-        <a href="#img">image</a>
+  <body>
+    <h1 style="text-align: center">Bookmarks</h1>
+    <div class="bookmark" id="book">
+      <a href="#head">Heading</a>
+      <a href="#para">para</a>
+      <a href="#list">list</a>
+      <a href="#quotes">quotes</a>
+      <a href="#formatting">formatting</a>
+      <a href="#hyperlinks">hyperlinks</a>
+      <a href="#img">image</a>
     </div>
-    
-    <h1 style="text-align:center" class="head" id="head ">Headings</h1>
-    <h1 style="color:red">Hello</h1>
-    <h2 style="text-decoration:line-through">Hello</h2>
-    <h3 style="text-decoration:overline;">Hello</h3>
+
+    <h1 style="text-align: center" class="head" id="head ">Headings</h1>
+    <h1 style="color: red">Hello</h1>
+    <h2 style="text-decoration: line-through">Hello</h2>
+    <h3 style="text-decoration: overline">Hello</h3>
     <h4>Hello</h4>
-    <h5 style="background-color:red;color:white;width:40px;">Hello</h5>
-    <h6 style="background-color:red;color:white;padding:20px;width:40px;margin-left:30px">Hello</h6>
+    <h5 style="background-color: red; color: white; width: 40px">Hello</h5>
+    <h6
+      style="
+        background-color: red;
+        color: white;
+        padding: 20px;
+        width: 40px;
+        margin-left: 30px;
+      "
+    >
+      Hello
+    </h6>
 
-    <hr>
+    <hr />
 
-    <h1 style="text-align:center">Paragraph with break</h1>
+    <h1 style="text-align: center">Paragraph with break</h1>
 
-    <p style="font-family:cursive" id="para">Technology has become an important part of everyday life, making it easier for people to communicate, learn, work, and solve problems.<br> From smartphones and computers to artificial intelligence and cloud applications, technology continues to change the way we interact with the world.<br> Learning new technologies requires patience and consistent practice, but even small improvements each day can lead to significant progress over time.</p>
-    <br>
+    <p style="font-family: cursive" id="para">
+      Technology has become an important part of everyday life, making it easier
+      for people to communicate, learn, work, and solve problems.<br />
+      From smartphones and computers to artificial intelligence and cloud
+      applications, technology continues to change the way we interact with the
+      world.<br />
+      Learning new technologies requires patience and consistent practice, but
+      even small improvements each day can lead to significant progress over
+      time.
+    </p>
+    <br />
 
-    <hr>
-    
-    <h1 style="text-align:center" id="list">List</h1>
+    <hr />
+
+    <h1 style="text-align: center" id="list">List</h1>
     <h1>Unordered List</h1>
-     
-    <ul style="list-style-type:circle" class="ordered">
-        <li>One</li>
-        <li>Two</li>
-        <li>Three</li>
+
+    <ul style="list-style-type: circle" class="ordered">
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
     </ul>
 
-    <ul style="list-style-type:disc">
-        <li>One</li>
-        <li>Two</li>
-        <li>Three</li>
+    <ul style="list-style-type: disc">
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
     </ul>
 
-    <ul style="list-style-type:square">
-        <li>One</li>
-        <li>Two</li>
-        <li>Three</li>
+    <ul style="list-style-type: square">
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
     </ul>
 
-    <ul style="list-style-position:inside">
-        <li>One</li>
-        <li>Two</li>
-        <li>Three</li>
+    <ul style="list-style-position: inside">
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
     </ul>
 
     <h1>Nested Unordered List</h1>
     <ul id="nested" class="nested">
-        <li>HTML</li>
-        <li>CSS
-            <ul>
-                <li>JS</li>
-                <li>Node.js</li>
-            </ul>
-        </li>
-        <li>SQL</li>
+      <li>HTML</li>
+      <li>
+        CSS
+        <ul>
+          <li>JS</li>
+          <li>Node.js</li>
+        </ul>
+      </li>
+      <li>SQL</li>
     </ul>
 
-    <hr>
+    <hr />
 
     <h1>Ordered List</h1>
     <ol type="A" start="3">
-        <li>One</li>
-        <li>Two</li>
-        <li>Three</li>
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
     </ol>
-    <br>
+    <br />
 
-    <ol type="i" start="5" reversed style="list-style-type:lower-roman">
-        <li>One</li>
-        <li>Two</li>
-        <li>Three</li>
+    <ol type="i" start="5" reversed style="list-style-type: lower-roman">
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
     </ol>
-    <br>
+    <br />
 
     <ol type="1" start="5">
-        <li>One</li>
-        <li>Two</li>
-        <li>Three</li>
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
     </ol>
 
     <ol type="I" start="2">
-        <li>One</li>
-        <li>Two</li>
-        <li>Three</li>
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
     </ol>
 
-    <hr>
+    <hr />
 
-    <h1 style="text-align:center">Description List</h1>
+    <h1 style="text-align: center">Description List</h1>
     <dl id="des_list">
-        <dt>HTML</dt>
-        <dd>Hyper Text Markup Language</dd>
-        <dt class="des_term">CSS</dt>
-        <dd>Cascading Style Sheet</dd>
-        <dt>JS</dt>
-        <dd class="des_details">Java Script</dd>
+      <dt>HTML</dt>
+      <dd>Hyper Text Markup Language</dd>
+      <dt class="des_term">CSS</dt>
+      <dd>Cascading Style Sheet</dd>
+      <dt>JS</dt>
+      <dd class="des_details">Java Script</dd>
     </dl>
-    
-    <hr>
 
-    <h1 style="text-align:center" id="formatting">Text Formatting</h1>
-    <strong>Strong</strong><br>
-    <b>bold</b><br>
-    <em>emphasis</em><br>
-    <i>italic</i><br>
-    <mark>Mark</mark><br>
-    <del>Delete</del><br>
-    <ins>ins</ins><br>
-    <small>Small</small><br>
-    <sup>H<sub>2</sub>O</sup><br>
-    <u>Hello</u><br>
-    <s>Hello</s><br>    
+    <hr />
 
-    <hr>
-    
+    <h1 style="text-align: center" id="formatting">Text Formatting</h1>
+    <strong>Strong</strong><br />
+    <b>bold</b><br />
+    <em>emphasis</em><br />
+    <i>italic</i><br />
+    <mark>Mark</mark><br />
+    <del>Delete</del><br />
+    <ins>ins</ins><br />
+    <small>Small</small><br />
+    <sup>H<sub>2</sub>O</sup><br />
+    <u>Hello</u><br />
+    <s>Hello</s><br />
+
+    <hr />
+
+    <h1 style="text-align: center">Bdo tag</h1>
+    <bdo dir="rtl" style="text-align: center">Hello World</bdo>
+
+    <hr />
+
     <!-- Quotes is for short line quotation -->
-    <h1 style="text-align:center" id="quotes"><b>Quotes</b></h1>
+    <h1 style="text-align: center" id="quotes"><b>Quotes</b></h1>
     <p>Hello world this is <q>html demo </q></p>
 
     <!-- For long and separate quotation -->
-    <h1 style="text-align:center">Block Quotes</h1>
+    <h1 style="text-align: center">Block Quotes</h1>
     <blockquote cite="Reference link">
-        Browser displays the block quotes with <mark>indentation.</mark>
+      Browser displays the block quotes with <mark>indentation.</mark>
     </blockquote>
 
-    <h1 style="text-align:center" id="hyperlinks">Hyper Links</h1>
-    <a href="https://github.com/">GitHub</a><br>
-    <a href="https://google.com/">Google</a><br>
-    <a href="https://email.com/">Email</a><br>
+    <hr />
 
-    <hr>
+    <h1 style="text-align: center" id="hyperlinks">Hyper Links</h1>
+    <a href="https://github.com/">GitHub</a><br />
+    <a href="https://google.com/">Google</a><br />
+    <a href="https://email.com/">Email</a><br />
+
+    <hr />
+
+    <h1 style="text-align: center" id="hyperlinks">Abbrevation</h1>
+    <p style="text-align: center">
+      I'm studying <abbr title="Master of Computer Applications">MCA</abbr>
+    </p>
+    <br />
+
+    <hr />
 
     <!---
     <p>Hello world</p>
     -->
 
-    <h3 style="text-align:center" id="img">Click the image to go to the table page</h3>
-    <center><a href="tables.html"><img src="HTML_logo.jpg" width="50%"></a></center>
-</body>
+    <h3 style="text-align: center" id="img">
+      Click the image to go to the table page
+    </h3>
+    <center>
+      <a href="tables.html"><img src="HTML_logo.jpg" width="50%" /></a>
+    </center>
+
+    <hr />
+
+    <footer>
+      <div
+        id="address"
+        style="text-align: center; background-color: cadetblue; color: white"
+      >
+        <h3>Address</h3>
+        <address>
+          Gautam NM<br />
+          Salem, Tamil Nadu<br />
+          Email: gautam@example.com
+        </address>
+      </div>
+    </footer>
+  </body>
 </html>
-
-

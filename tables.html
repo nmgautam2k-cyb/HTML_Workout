@@ -1,106 +1,239 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <title>Table</title>
-        <link rel="icon" href="HTML_logo.jpg">
-        <style>
-            table, th, td {
-                border: 1px solid black;
-                border-collapse: collapse;
-            }
-            th, td {
-                padding: 20px;
-            }   
-        </style>
-    </head>
-    <body>
+  <head>
+    <title>Table</title>
+    <link rel="icon" href="HTML_logo.jpg" />
+    <style>
+      table,th,td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <h1>
+        HTML
+        <span
+          style="
+            background-color: red;
+            color: white;
+            border: solid;
+            border-radius: 15px;
+            font-size: larger;
+          "
+          >Table 1</span
+        >
+      </h1>
+      <p>rowspan and colspan are used</p>
+      <table style="text-align: center" class="table" id="table">
+        <tr class="row1" style="background-color: #4a4e69; color: white">
+          <th colspan="2">Name</th>
+          <th>Age</th>
+          <th>Dept</th>
+          <th>Gender</th>
+        </tr>
 
-        <center>
-            <h1>HTML <span style="background-color:red; color:white; border:solid; border-radius:15px; font-size:larger">Table 1</span></h1>
-            <p>rowspan and colspan are used</p>
-            <table style="text-align:center" class="table" id="table">
-                <tr class="row1" style="background-color:#4a4e69; color:white">
-                    <th colspan="2">Name</th>
-                    <th>Age</th>
-                    <th>Dept</th>
-                    <th>Gender</th>
-                </tr>
-                
-                <tr class="row2" style="background-color:#8a8ea5; color:white">
-                    <td rowspan="2">Gautam s</td>
-                    <td>21</td>
-                    <td>MCA</td>
-                    <td>Male</td>
-                    <!-- Note: Adjusted columns to align properly with the 5 header columns -->
-                </tr>
-                
-                <tr class="row3" style="background-color:#4a4e69; color:white">
-                    <td>Sudharsan</td>
-                    <td>21</td>
-                    <td>MCA</td>
-                    <td>Male</td>
-                </tr>
-                
-                <tr class="row4" style="background-color:#8a8ea5; color:white">
-                    <td colspan="2">Gautam nm</td>
-                    <td>22</td>
-                    <td>MCA</td>
-                    <td>Male</td>
-                </tr>
+        <tr class="row2" style="background-color: #8a8ea5; color: white">
+          <td rowspan="2">Gautam s</td>
+          <td>21</td>
+          <td>MCA</td>
+          <td>Male</td>
+          <!-- Note: Adjusted columns to align properly with the 5 header columns -->
+        </tr>
 
-                <tr class="row5" style="background-color:#4a4e69; color:white">
-                    <td colspan="2">Chandru</td>
-                    <td>22</td>
-                    <td>MCA</td>
-                    <td>Male</td>
-                </tr>
-            </table>
-        </center>
+        <tr class="row3" style="background-color: #4a4e69; color: white">
+          <td>Sudharsan</td>
+          <td>21</td>
+          <td>MCA</td>
+          <td>Male</td>
+        </tr>
 
-        <h1 style="text-align:center">Block Elements</h1>
-        <div style="background-color:#4a4e69; color:white">
-            Block Elements starts on newline and it occupies whole width of the line
-        </div>
+        <tr class="row4" style="background-color: #8a8ea5; color: white">
+          <td colspan="2">Gautam nm</td>
+          <td>22</td>
+          <td>MCA</td>
+          <td>Male</td>
+        </tr>
 
-        <h1 style="text-align:center">Inline Element</h1>
-        <span style="background-color:#4a4e69; color:white">Inline element takes only the width required by its content.</span>
+        <tr class="row5" style="background-color: #4a4e69; color: white">
+          <td colspan="2">Chandru</td>
+          <td>22</td>
+          <td>MCA</td>
+          <td>Male</td>
+        </tr>
+      </table>
+    </center>
+    <br />
 
-        <h1 style="text-align:center">Using Division tag</h1>
+    <h1 style="text-align: center">Image inside table</h1>
 
-        <div style="background-color:#4a4e69; color:white" class="grouping" id="grouping">
-            <h3 style="background-color:red; width:70px">Gautam</h3>
-            <h3>MCA</h3>
-        </div>
+    <center>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Photo</th>
+        </tr>
+        <tr>
+          <td>Gautam nm</td>
+          <td>22</td>
+          <td>
+            <img
+              src="https://static.vecteezy.com/system/resources/thumbnails/053/547/120/small_2x/generic-user-profile-avatar-for-online-platforms-and-social-media-vector.jpg"
+              style="width: 100px; height: 100px"
+            /><br />
+            <a href="https://chatgpt.com" target="_blank">HyperLink</a>
+          </td>
+        </tr>
+        <tr>
+          <td>sudharsan</td>
+          <td>22</td>
+          <td>
+            <img
+              src="https://static.vecteezy.com/system/resources/thumbnails/053/547/120/small_2x/generic-user-profile-avatar-for-online-platforms-and-social-media-vector.jpg"
+              style="width: 100px; height: 100px"
+            /><br />
+            <a href="https://chatgpt.com" target="_self">HyperLink</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Gautam nm</td>
+          <td>22</td>
+          <td>
+            <img
+              src="https://static.vecteezy.com/system/resources/thumbnails/053/547/120/small_2x/generic-user-profile-avatar-for-online-platforms-and-social-media-vector.jpg"
+              style="width: 100px; height: 100px"
+            /><br />
+            <a href="https://chatgpt.com" target="_blank">HyperLink</a>
+          </td>
+        </tr>
+      </table>
+    </center>
+    <br />
 
-        <h1 style="text-align:center">iframes (Inline frames)</h1>
+    <hr />
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/mJgBOIoGihA?si=igI-wVCUhj4eJ8pt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="display:block; margin:auto"></iframe><br><hr>
+    <h1 style="text-align: center">Block Elements</h1>
+    <div style="background-color: #4a4e69; color: white">
+      Block Elements starts on newline and it occupies whole width of the line
+    </div>
 
-        <h1 style="text-align:center">HTML JavaScript</h1>
+    <h1 style="text-align: center">Inline Element</h1>
+    <span style="background-color: #4a4e69; color: white"
+      >Inline element takes only the width required by its content.</span
+    >
 
-        <div style="display:flex;justify-content:center">
-            <p>Accessing next paragraph content using text-content</p><br>
-        </div>
+    <h1 style="text-align: center">Using Division tag</h1>
 
-        <p id="content" style="text-align:center">Hello World</p><br>
-        <hr>
-        
-        <script>
-            alert("welcome to table page");
-            let a=document.getElementById("content");
-            a.textContent="Hello Javascript"
-        </script>
+    <div
+      style="background-color: #4a4e69; color: white"
+      class="grouping"
+      id="grouping"
+    >
+      <h3 style="background-color: red; width: 70px">Gautam</h3>
+      <h3>MCA</h3>
+    </div>
 
-        <p id="para"></p>
-        
+    <h1 style="text-align: center">iframes (Inline frames)</h1>
 
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/mJgBOIoGihA?si=igI-wVCUhj4eJ8pt"
+      title="YouTube video player"
+      frameborder="0"
+      allow="
+        accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+        web-share;
+      "
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+      style="display: block; margin: auto"
+    ></iframe
+    ><br />
+    <hr />
 
+    <h1 style="text-align: center">HTML JavaScript</h1>
 
+    <div style="display: flex; justify-content: center">
+      <p>Accessing next paragraph content using text-content</p>
+      <br />
+    </div>
 
+    <p id="content" style="text-align: center">Hello World</p>
+    <br />
+    <hr />
 
+    <script>
+      alert("welcome to table page");
+      let a = document.getElementById("content");
+      a.textContent = "Hello Javascript";
+    </script>
 
+    <h1 id="name">Welcome</h1>
 
+    <script>
+      const username = "Welcome";
+      const nameCont = document.getElementById("name");
 
-        <h3 style="text-align:center"><a href="Demo1.html" style="text-decoration:underline">Page1</a></h3>
-    </body>
+      nameCont.textContent += username === " " ? " guest " : " gautam ";
+    </script>
+
+    <h1 style="text-align: center">Audio and Video</h1>
+
+    <div
+      id="audio_vid"
+      style="display: flex; justify-content: center; flex-direction: column"
+    >
+      <audio src="URL" controls></audio><br /><br />
+      <video source="URL" controls></video>
+    </div>
+
+    <section>
+      <h1>About us</h1>
+      <p>We have 23+ years of experience</p>
+    </section>
+
+    <section>
+      <h1>Service</h1>
+      <p>We are providing service in both online and offline</p>
+    </section>
+
+    <article>
+      Hello HTML ,This is my first HTML Page, HTML creates structure of the web
+      page
+    </article>
+    <br />
+
+    <div
+      id="hyperlinks"
+      style="
+        display: flex;
+        justify-content: center;
+        margin-right: 10px;
+        gap: 20px;
+      "
+    >
+      <a href="Demo1.html" style="text-decoration: underline">Page1</a>
+      <a
+        href="forms.html"
+        style="text-decoration: underline; text-align: center"
+        >Next Page</a>
+
+        <a
+        href="Drag_Drop.html"
+        style="text-decoration: underline; text-align: center"
+        >Drag_Drop</a>
+    </div>
+  </body>
 </html>

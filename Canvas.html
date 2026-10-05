@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Canvas</title>
+  </head>
+
+  <body>
+    <canvas id="myCanvas" width="500" height="500"></canvas>
+
+    <script>
+      const canvas = document.getElementById("myCanvas");
+      const ctx = canvas.getContext("2d");
+
+      ctx.fillStyle = "red";
+      ctx.fillRect(70, 70, 100, 100);
+
+      ctx.fillStyle = "blue";
+      ctx.fillRect(20, 30, 100, 100);
+      ctx.beginPath();
+      ctx.arc(200, 150, 50, 0, 2 * Math.PI);
+      ctx.fill();
+
+      ctx.beginPath();
+      ctx.arc(500, 100, 100, 2 * Math.PI);
+      ctx.fill();
+    </script>
+
+    <hr>
+    <h1 style="text-align:center">HTML Entities</h1>
+
+    <p>Copyrights &copy;</p>
+    <p>Hello &nbsp;&nbsp; world</p>
+    <p>Hello &euro; world</p>
+    <p>Hello &nbsp;&nbsp; world</p>
+    <p>2 &gt 1</p>
+    <p>1 &lt 5</p>
+    <p>Price: &#8377; 5000</p>
+    <p>&reg;</p>
+    <p>&amp;</p>
+    <p>H &trade;</p>
+    <p>&yen;</p>
+    <p>&cent;</p>
+    <p>&pound;</p>
+    <p>&times;</p>
+    <p>&divide;</p>
+
+  </body>
+</html>
