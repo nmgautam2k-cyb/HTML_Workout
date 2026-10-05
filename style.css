@@ -1,0 +1,109 @@
+ * {
+        padding: 0%;
+        margin: 0%;
+      }
+      body {
+        background: url("green-fade-gradient-background_1015979-23361.avif");
+        background-size: cover;
+      }
+
+      #navbar {
+        display: flex;
+        padding: 20px;
+      }
+      #navbar ul {
+        display: flex;
+        gap: 40px;
+        list-style: none;
+        margin-left: 65%;
+        margin-top: 10px;
+      }
+      #navbar img {
+        border-radius: 20px;
+      }
+
+      #search {
+        width: 90%;
+        height: 30px;
+        margin-top: 20px;
+        margin-left: 20px;
+        border: solid 1px black;
+        border-radius: 10px;
+      }
+      #search-button {
+        height: 32px;
+        border: solid 1px black;
+        border-radius: 10px;
+        width: 70px;
+        background-color: green;
+        color: white;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      #about {
+        color: white;
+        padding: 10px;
+       
+      }
+      #para-about{
+         transition:0.5s;
+         background-color:green;
+      }
+      #para-about:hover{
+        transform:scale(1.03);
+        background-color:darkseagreen;
+      }
+      #education {
+        color: white;
+        display: flex;
+        gap: 100px;
+        list-style: none;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+      #education li {
+        border: 1px solid green;
+        border-radius: 20px;
+        background-color: green;
+        padding: 20px;
+      }
+      #image-logo {
+        margin-left: 100px;
+        margin-top: 100px;
+        display: flex;
+        gap: 100px;
+        justify-content: center;
+        margin-bottom: 50px;
+      }
+      #image-logo img {
+        width: 200px;
+        height: 300px;
+        transition: 0.5s;
+      }
+      #image-logo img:hover {
+        height: 350px;
+        width: 250px;
+      }
+      #services{
+        display:flex;
+        flex-direction:row;
+        margin-top:100px;
+        gap:10px;
+        margin:10px;
+        margin-bottom:70px;
+      }
+      .box{
+        border:solid green 1px;
+        border-radius:10px;
+        padding:20px;
+        background-color:green;
+        color:white;
+        transition:0.5s;
+      }
+      .box:hover{
+        transform:scale(1.07);
+        background-color:darkseagreen;
+      }
