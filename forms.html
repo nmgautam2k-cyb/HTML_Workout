@@ -2,13 +2,21 @@
 <html>
   <head>
     <title>forms</title>
-    <meta name="viewport;width=device-width initial-scale=1.0" />
+    <meta name="viewport;width=device-width initial-scale=1.0"/>
 
     <style>
       * {
         margin: 0%;
         padding: 0%;
       }
+      body{
+        background:url("green-fade-gradient-background_1015979-23361.avif");
+        background-size:cover;
+      }
+      label,a{
+        color:rgb(0, 0, 0);
+      }
+  
     </style>
   </head>
   <body>
@@ -16,11 +24,11 @@
       style="
         display: flex;
         justify-content: space-between;
-        background-color: rgb(249, 249, 220);
+        background-color:darkseagreen;
         padding: 30px;
       "
     >
-      <h3 style="margin-left: 30px">Form</h3>
+      <h2 style="margin-left: 30px;color:rgb(0, 0, 0)">Form</h2>
       <ul
         style="
           list-style-type: none;
@@ -29,6 +37,9 @@
           margin-right: 100px;
         "
       >
+        <li>
+          <a href="home.html" style="text-decoration: none">Home</a>
+        </li>
         <li><a href="Demo1.html" style="text-decoration: none">Demo1</a></li>
         <li>
           <a href="tables.html" style="text-decoration: none">Table Page</a>
@@ -37,52 +48,51 @@
         <li>
           <a href="Canvas.html" style="text-decoration: none">Canvas Page</a>
         </li>
+        <li>
+          <a href="login.html" style="text-decoration: none">Login</a>
+        </li>
+        
       </ul>
     </nav>
 
     <div
       style="
-        border: solid 1px;
+        border: solid 1px green;
         border-radius: 10%;
         width: 500px;
         margin-top: 100px;
         margin-left: 35%;
-        background-color: rgb(249, 249, 220);
+        background-color:darkseagreen;
       "
       id="form"
     >
-      <h1 style="text-align: center"><u>Sample Form</u></h1>
+      <h1 style="text-align: center;padding-top:40px;color:rgb(0, 0, 0);font-family:cursive">Sample Form</h1>
       <pre>
-        <form autocomplete=""on>
+        <form autocomplete="on">
            
-           <label  for="username">Name</label>   <input type="text" placeholder="Enter Name" style="width:250px;height:30px;border:solid 1px;border-radius:10px;background-color:rgb(220, 220, 220);color:rgb(0, 0, 0)" required><br>
+           <label  for="username">Name</label>   <input type="text" placeholder="Enter Name" style="width:250px;height:30px;border:solid 1px;border-radius:10px" required><br>
 
-           <label for="age">Age</label>    <input type="number" placeholder="Enter Age" style="width:250px;height:30px;border:solid 1px;border-radius:10px;background-color:rgb(220, 220, 220);color:rgb(0, 0, 0)" required>
+           <label for="age">Age</label>    <input type="number" placeholder="Enter Age" style="width:250px;height:30px;border:solid 1px;border-radius:10px" required>
 
            <label  for="gender">Gender</label>    <label for="gender">Male</label> <input type="radio" id="male" name="gender"> <label >Female</label> <input type="radio" id="female" name="gender"  required>
 
-           <label for="email">Email</label>  <input type="email" placeholder="Enter Email" style="width:250px;height:30px;border:solid 1px;border-radius:10px;background-color:rgb(220, 220, 220);color:rgb(0, 0, 0)" required>  
+           <label for="email">Email</label>  <input type="email" placeholder="Enter Email" style="width:250px;height:30px;border:solid 1px;border-radius:10px" required>  
 
            <label for="range">Experience</label> <input type="range" required min="50" max="100" id="range">
 
-           <label>Docuuments</label>  <input type="file" accept=".jpg,.png">
+           <label>Documents</label>  <input type="file" accept=".jpg,.png">
 
-           <textarea rows="5" cols="30" placeholder="About Yourself" style="display: flex; justify-content:center;margin-left:150px;background-color:rgb(220,220,220)"></textarea>
+           <label>Password</label>   <input type="password">
 
-           <button type="submit" style="margin-left:130px;margin-top:20px;padding:15px;border-radius:50px;border:solid 1px;background-color:rgb(220,220,220)">Submit</button> <br>           
+
+           <textarea rows="5" cols="30" placeholder="About Yourself" style="display: flex; justify-content:center;margin-left:150px"></textarea>
+
+           <button type="submit" style="margin-left:130px;margin-top:20px;padding:15px;border-radius:50px;border:solid 1px">Submit</button> <br>    
+
+                  <label>I already have an account!!</label>&nbsp;<a href="login.html" style="color:rgb(255, 255, 255)">Login</a>
         </form>
         </pre>
     </div>
 
-    <a
-      href="tables.html"
-      style="
-        display: flex;
-        justify-content: center;
-        margin-left: 50px;
-        margin-top: 30px;
-      "
-      >Table Page</a
-    >
   </body>
 </html>

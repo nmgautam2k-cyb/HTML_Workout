@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Account</title>
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+      }
+
+      body {
+        background: url("green-fade-gradient-background_1015979-23361.avif");
+        background-size: cover;
+      }
+      #account-head{
+        padding:20px;
+      }
+      #login {
+        border: 1px solid black;
+        border-radius:50px;
+        width: 500px;
+        height:300px;
+        padding: 30px;
+        margin: 50px auto;
+        margin-top:170px;
+        background-color:darkseagreen;
+      }
+
+      #form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+      .button{
+        margin-top:40px;
+      }
+      .login-button{
+        width:80px;
+        padding:10px;
+        border:solid 1px black;
+        border-radius:10px;
+      }
+      input{
+          height:30px;
+          width:300px;
+          border:solid 1px black;
+          border-radius:7px;
+      }
+      label{
+        margin-top:20px;
+      }
+      .reg-button{
+        border:solid black 1px;
+        padding:10px;
+        border-radius:10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center" id="account-head">Account</h1>
+    <hr />
+
+    <div id="login">
+      <form id="form">
+        <h1>Login Page</h1>
+
+        <label>Email id</label>
+        <input type="email" placeholder="Enter Email" />
+
+        <label>Password</label>
+        <input type="password"  placeholder="Enter Password"  />
+
+        <div class="button">
+        <button class="login-button" style>Login</button>
+        <button class="reg-button">
+          <a href="forms.html" style="text-decoration: none;color:black">Register</a>
+        </button>
+        </div>
+    
+      </form>
+    </div>
+  </body>
+</html>
