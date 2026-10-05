@@ -16,6 +16,14 @@
       label,a{
         color:rgb(0, 0, 0);
       }
+      input{
+        color:gray;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+
+      input::placeholder{
+        padding:7px;
+      }
   
     </style>
   </head>
@@ -82,10 +90,10 @@
 
            <label>Documents</label>  <input type="file" accept=".jpg,.png">
 
-           <label>Password</label>   <input type="password">
+           <label>Password</label> <input type="password" placeholder="Enter Password" minlength="10 maxlength=20" style="width:250px;height:30px;border:solid 1px;border-radius:10px">
 
 
-           <textarea rows="5" cols="30" placeholder="About Yourself" style="display: flex; justify-content:center;margin-left:150px"></textarea>
+           <textarea rows="2" cols="5" placeholder="About Yourself" style="display: flex; justify-content:center;margin-left:150px"></textarea>
 
            <button type="submit" style="margin-left:130px;margin-top:20px;padding:15px;border-radius:50px;border:solid 1px">Submit</button> <br>    
 
